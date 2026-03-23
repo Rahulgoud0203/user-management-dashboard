@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import UserContext from "./context/userContext";
+import UserContext from "./context/UserContext.jsx";
 import Home from "./components/Home";
 import UserDetail from "./components/UserDetail";
 import "./App.css";
@@ -15,15 +15,17 @@ function App() {
         const response = await fetch(
           "https://jsonplaceholder.typicode.com/users",
         );
+
         if (!response.ok) {
-          setError("Failed to fetch users");
-        } else {
-          const data = await response.json();
-          setUsers(data);
-          setLoading(false);
+          throw new Error("Failed to fetch users");
         }
+
+        const data = await response.json();
+        setUsers(data);
       } catch (err) {
         setError(err.message);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -32,7 +34,7 @@ function App() {
   return (
     <UserContext
       value={{
-        users: users,
+        users,
         loading,
         error,
       }}

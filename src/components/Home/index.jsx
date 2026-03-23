@@ -1,9 +1,10 @@
 import "./index.css";
-import UserContext from "../../context/userContext";
+import UserContext from "../../context/UserContext";
 import UserCard from "../UserCard";
 import { useState, useContext, useMemo } from "react";
 const Home = () => {
   const { users, loading, error } = useContext(UserContext);
+  console.log(loading);
   const [search, setSearch] = useState("");
   const [sortOrder, setSortOrder] = useState("asc");
   const filteredUsers = useMemo(() => {
@@ -15,8 +16,9 @@ const Home = () => {
           : b.name.localeCompare(a.name),
       );
   }, [users, search, sortOrder]);
-  if (loading) return <h2 className="loader">Loading...</h2>;
+
   if (error) return <h2 className="error_msg">{error}</h2>;
+  if (loading) return <h2 className="loader">Loading...</h2>;
 
   return (
     <div className="dash-cnt">

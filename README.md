@@ -40,17 +40,13 @@ This application fetches user data from a public API and allows users to search,
 src/
 │
 ├── components/
-│   ├── UserCard.jsx
-│
-├── pages/
 │   ├── Home.jsx
+│   ├── UserCard.jsx
 │   ├── UserDetail.jsx
 │
 ├── context/
 │   └── userContext.jsx
 │
-├── services/
-│   └── api.js
 │
 ├── App.jsx
 └── main.jsx
@@ -62,10 +58,10 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME
+git clone https://github.com/Rahulgoud0203/user-management-dashboard.git
 
 # Navigate to project folder
-cd YOUR_REPO_NAME
+cd user-management-dashboard
 
 # Install dependencies
 npm install
@@ -75,8 +71,6 @@ npm run dev
 ```
 
 ---
-
-
 
 ## 🚀 Live Demo
 

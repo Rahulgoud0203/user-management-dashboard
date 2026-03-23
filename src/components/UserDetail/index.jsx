@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router";
 import { useContext } from "react";
-import UserContext from "../../context/userContext";
+import UserContext from "../../context/UserContext";
 import "./index.css";
 const UserDetail = () => {
   const { id } = useParams();
