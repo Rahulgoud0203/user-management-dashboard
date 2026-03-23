@@ -1,0 +1,43 @@
+.dtl-cnt {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.dtl-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dtl-card h2 {
+  margin-bottom: 15px;
+}
+
+.dtl-card p {
+  margin: 8px 0;
+}
+.back-btn {
+  margin-bottom: 15px;
+  padding: 8px 14px;
+  border: none;
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #4338ca;
+}
+
+.user-link {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.user-link:hover {
+  text-decoration: underline;
+}
