@@ -74,7 +74,7 @@ npm run dev
 
 ## 🚀 Live Demo
 
-👉 [Live Project Link](#)
+👉 [https://rahul-user-management-dashboard.vercel.app/](#)
 
 ---
 
